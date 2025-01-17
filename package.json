@@ -12,8 +12,10 @@
   "dependencies": {
     "@types/express": "^5.0.0",
     "@types/node": "^22.10.7",
+    "@types/sequelize": "^4.28.20",
     "express": "^4.21.2",
     "nodemon": "^3.1.9",
+    "sequelize": "^6.37.5",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.7.3"
