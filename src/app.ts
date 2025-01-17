@@ -1,6 +1,10 @@
-import express from "express";
+import Express from "express";
+import Env from "dotenv";
 
-const app = express();
+// 初始化env
+Env.config();
+
+const app = Express();
 const port = 3000;
 
 app.listen(port);
