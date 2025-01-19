@@ -13,7 +13,6 @@ Env.config();
 Database.getInstance();
 
 const app = Express();
-const port = 3000;
 
 // 接收Body參數設定
 app.use(Express.json());
@@ -26,6 +25,9 @@ app.use(
 
 app.use(RtSwagger);
 app.use(RtUsersLogin);
-app.listen(port);
 
-console.log(`已開始監聽${port}Port`);
+const port = process.env.APP_PORT!;
+
+app.listen(port, () => {
+    console.log(`已開始監聽${port}Port`);
+});
