@@ -2,6 +2,7 @@ import Express from "express";
 import Env from "dotenv";
 import BodyParser from "body-parser";
 import Database from "@/database/database";
+import RtSwagger from "@/router/swagger";
 import RtUsersLogin from "@/router/users/login";
 
 // 初始化env
@@ -22,6 +23,7 @@ app.use(
     })
 );
 
+app.use(RtSwagger);
 app.use(RtUsersLogin);
 app.listen(port);
 
