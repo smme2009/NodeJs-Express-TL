@@ -9,7 +9,7 @@ const ctrlAccount: CtrlUsers = new CtrlUsers();
 
 /**
  * @swagger
- * /login:
+ * /api/login:
  *   post:
  *     summary: 登入
  *     tags: [使用者]
@@ -70,7 +70,7 @@ const ctrlAccount: CtrlUsers = new CtrlUsers();
  *                   type: string
  *                   example: "帳號或密碼錯誤"
  */
-router.post("/login", (request: Request, response: Response) => {
+router.post("/api/login", (request: Request, response: Response) => {
     ctrlAccount.login(request, response);
 });
 
