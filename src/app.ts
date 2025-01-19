@@ -1,4 +1,3 @@
-import "module-alias/register";
 import Express from "express";
 import Env from "dotenv";
 import BodyParser from "body-parser";
