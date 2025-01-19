@@ -15,7 +15,7 @@ const json: object = Swagger({
             version: "0.0.0",
         },
     },
-    apis: [Path.join(__dirname, "users/login.ts")],
+    apis: [Path.join(__dirname, "**/*.ts"), Path.join(__dirname, "**/*.js")],
 });
 
 router.use("/swagger", SwaggerUI.serve, SwaggerUI.setup(json));
