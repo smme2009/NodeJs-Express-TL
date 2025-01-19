@@ -14,6 +14,8 @@ const app = Express();
 const port = 3000;
 
 // 接收Body參數設定
+app.use(Express.json());
+
 app.use(
     BodyParser.urlencoded({
         extended: true,
